@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem-Solving in Insurance - Elisha Okello</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <style>
+         /* Preloader Styles */
+#preloader {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: #60c3db; /* Change to your preferred background color */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   z-index: 1000;
+}
+
+#preloader .loader {
+   border: 8px solid #f3f3f3; /* Light grey */
+   border-top: 8px solid #3498db; /* Blue */
+   border-radius: 50%;
+   width: 60px;
+   height: 60px;
+   animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+   0% { transform: rotate(0deg); }
+   100% { transform: rotate(360deg); }
+}
+
+#preloader p {
+   margin-top: 20px;
+   font-weight: 400;
+   font-size: 18px;
+   color: #333; /* Change to your preferred text color */
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+      
+       
+        .back-link {
+            font-size: 1rem;
+            color: #fff;
+        }
+
+        .back-link:hover {
+            color: #3498db;
+        }
+
+        /* Problem-Solving Section Styles */
+        .problem-solving-section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .problem-solving-section h1 {
+            font-size: 2.5rem;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .problem-solving-section .intro {
+            font-size: 1.2rem;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            background: linear-gradient(135deg, #3498db, #2c3e50);
+            color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .problem-solving-section .intro strong {
+            font-size: 1.4rem;
+            color: #ffdd57; /* Highlight color */
+        }
+
+        .cards-container {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding: 20px 0;
+            scroll-snap-type: x mandatory;
+        }
+
+        .card {
+            flex: 0 0 300px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            scroll-snap-align: start;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        .card p {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #555;
+        }
+
+        /* Colorful Cards */
+        .card:nth-child(1) {
+            background-color: #e8f4f8; /* Light blue */
+        }
+
+        .card:nth-child(2) {
+            background-color: #f8e8f4; /* Light pink */
+        }
+
+        .card:nth-child(3) {
+            background-color: #f4f8e8; /* Light green */
+        }
+
+        .card:nth-child(4) {
+            background-color: #f8f4e8; /* Light yellow */
+        }
+
+        .card:nth-child(5) {
+            background-color: #e8f8f4; /* Light teal */
+        }
+
+        .card:nth-child(6) {
+            background-color: #f4e8f8; /* Light purple */
+        }
+
+        .card:nth-child(7) {
+            background-color: #f8f8e8; /* Light beige */
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 578px) {
+            .problem-solving-section h1 {
+                font-size: 2rem;
+            }
+
+            .problem-solving-section .intro {
+                font-size: 1rem;
+                padding: 15px;
+            }
+
+            .cards-container {
+                flex-direction: column;
+                overflow-x: unset;
+            }
+
+            .card {
+                flex: 1 1 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+<!-- Preloader -->
+<div id="preloader">
+    <div class="loader"></div>
+    <p>PROBLEM SOLVING SKILLS</p>
+</div>
+    <!-- Desktop Navigation -->
+    <nav id="desktop-nav">
+        <div class="logo">Elisha Okello</div>
+        <div>
+            <a href="index.html" class="back-link">Back to Main Page</a>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <nav id="hamburger-nav">
+        <div class="logo">Elisha Okello</div>
+        <div class="back-menu">
+            <a href="index.html" class="back-link">Back to Main Page</a>
+        </div>
+    </nav>
+
+    <!-- Problem-Solving Section -->
+    <section class="problem-solving-section">
+        <div class="container">
+            <h1>Problem-Solving in Insurance</h1>
+            <div class="intro">
+                <strong>Innovative Solutions for the Insurance Industry</strong><br>
+                From policy administration to client retention, I specialize in solving complex challenges in the insurance sector. 
+                My expertise ensures compliance, efficiency, and customer satisfaction through data-driven strategies and tailored solutions.
+            </div>
+            <div class="cards-container">
+                <div class="card">
+                    <h3>Policy Administration</h3>
+                    <p>Streamlining policy processing, endorsements, and renewals to ensure compliance and a seamless experience for policyholders.</p>
+                </div>
+                <!--<div class="card">-->
+                    <!--<h3>Claims Verification</h3>--->
+                    <!--<p>Reviewing and verifying claims to reduce fraud and ensure timely settlements.</p>-->
+                <!--</div>-->
+                <div class="card">
+                    <h3>Client Relationships</h3>
+                    <p>Building long-term relationships through effective communication and client-focused service delivery.</p>
+                </div>
+                <div class="card">
+                    <h3>Quotations & Issuance</h3>
+                    <p>Preparing competitive quotations and issuing accurate policies based on client needs and risk assessment.</p>
+                </div>
+                <!--<div class="card">-->
+                    <!--<h3>Regulatory Compliance</h3>-->
+                    <!--<p>Ensuring adherence to insurance regulations and preparing accurate reports.</p>-->
+                <!--</div>-->
+                <div class="card">
+                    <h3>Data Analysis</h3>
+                    <p>Using actuarial principles to assess risk, forecast losses, and optimize pricing.</p>
+                </div>
+                <!--<div class="card">-->
+                    <!--<h3>Credit Control</h3>-->
+                    <!--<p>Managing premium collections and developing strategies to retain key clients.</p>-->
+                <!--</div>-->
+            </div>
+        </div>
+    </section>
+    <script>//Set a timeout to hide the preloader after 5 seconds
+        setTimeout(function() {
+            const preloader = document.getElementById('preloader');
+            preloader.style.display = 'none';
+        }, 2000); // 5000 milliseconds = 5 seconds
+        </script>
+    
+</body>
+</html>

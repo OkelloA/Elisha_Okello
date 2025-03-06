@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elisha Okello - Underwriting Skills</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <style>
+        /* Preloader Styles */
+#preloader {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: #60c3db; /* Change to your preferred background color */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   z-index: 1000;
+}
+
+#preloader .loader {
+   border: 8px solid #f3f3f3; /* Light grey */
+   border-top: 8px solid #3498db; /* Blue */
+   border-radius: 50%;
+   width: 60px;
+   height: 60px;
+   animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+   0% { transform: rotate(0deg); }
+   100% { transform: rotate(360deg); }
+}
+
+#preloader p {
+   margin-top: 20px;
+   font-weight: 400;
+   font-size: 18px;
+   color: #333; /* Change to your preferred text color */
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+        .back-link {
+            font-size: 1rem;
+            color: #fff;
+        }
+
+        .back-link:hover {
+            color: #3498db;
+        }
+
+        /* Skills Section Styles */
+        .skills-section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .skills-section h1 {
+            font-size: 2.5rem;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .skills-section .intro {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            background: linear-gradient(135deg, #3498db, #2c3e50);
+            color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .skills-section .intro strong {
+            font-size: 1.4rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #ffdd57; /* Highlight color */
+        }
+
+       /* Skills Grid Container */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to the next line */
+    gap: 20px; /* Space between cards */
+    justify-content: center; /* Center the cards horizontally */
+    padding: 20px 0; /* Add padding above and below the grid */
+}
+
+/* Individual Skill Card */
+.skill-card {
+    background-color: #ffffff; /* White background */
+    border: 1px solid #e0e0e0; /* Light border */
+    border-radius: 12px; /* Rounded corners */
+    padding: 20px; /* Inner spacing */
+    width: calc(50% - 10px); /* Two cards per line with gap */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    text-align: left; /* Align text to the left */
+}
+
+.skill-card:hover {
+    transform: translateY(-5px); /* Lift card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.skill-card h3 {
+    font-size: 20px;
+    color: #3498db; /* Blue color for headings */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.skill-card p {
+    font-size: 14px;
+    color: #555; /* Dark gray for text */
+    line-height: 1.6; /* Improve readability */
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skill-card {
+        width: 100%; /* Full width on small screens */
+    }
+}
+        /* Colorful Skill Cards */
+        .skill-card:nth-child(1) {
+            background-color: #e8f4f8; /* Light blue */
+        }
+
+        .skill-card:nth-child(2) {
+            background-color: #f8e8f4; /* Light pink */
+        }
+
+        .skill-card:nth-child(3) {
+            background-color: #f4f8e8; /* Light green */
+        }
+
+        .skill-card:nth-child(4) {
+            background-color: #f8f4e8; /* Light yellow */
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 578px) {
+            .skills-section h1 {
+                font-size: 2rem;
+            }
+
+            .skills-section .intro {
+                font-size: 1rem;
+                padding: 15px;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+        <p>MY UNDERWRITING SKILLS</p>
+    </div>
+
+    <!-- Desktop Navigation -->
+    <nav id="desktop-nav">
+        <div class="logo">Elisha Okello</div>
+        <div>
+            <a href="index.html" class="back-link">Back to Main Page</a>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <nav id="hamburger-nav">
+        <div class="logo">Elisha Okello</div>
+        <div class="back-menu">
+            <a href="index.html" class="back-link">Back to Main Page</a>
+        </div>
+    </nav>
+
+    <!-- Skills Section -->
+    <section class="skills-section">
+        <div class="container">
+            <h1>Underwriting & Risk Assessment</h1>
+            <div class="intro">
+                <strong>Expert in Underwriting & Bonds Management</strong><br>
+                Passionate about evaluating risks and ensuring accurate premium pricing for insurance policies. 
+                Skilled in analyzing financial and actuarial data to determine risk exposure and loss probabilities. 
+                Experienced in handling performance bonds, customs bonds, and surety bonds, ensuring compliance 
+                with regulations and facilitating smooth issuance and renewal processes.
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Risk Assessment</h3>
+                    <p>
+                        Expert in evaluating risks for various insurance policies, ensuring accurate premium pricing 
+                        and policy issuance. Skilled in analyzing financial and actuarial data to determine risk exposure.
+                    </p>
+                </div>
+                <div class="skill-card">
+                    <h3>Bonds & Suretyship</h3>
+                    <p>
+                        Experienced in handling performance bonds, customs bonds, and surety bonds. Assess client 
+                        financial stability and ensure compliance with bonding regulations.
+                    </p>
+                </div>
+                <div class="skill-card">
+                    <h3>Policy Issuance</h3>
+                    <p>
+                        Proficient in issuing insurance policies with precision, ensuring compliance with industry 
+                        standards and client requirements.
+                    </p>
+                </div>
+                <div class="skill-card">
+                    <h3>Compliance & Regulations</h3>
+                    <p>
+                        Adept at ensuring all underwriting and bonding processes comply with legal and regulatory 
+                        requirements, minimizing risk and liability.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>// Set a timeout to hide the preloader after 5 seconds
+        setTimeout(function() {
+            const preloader = document.getElementById('preloader');
+            preloader.style.display = 'none';
+        }, 5000); // 5000 milliseconds = 5 seconds</script>
+
+
+</body>
+</html>
